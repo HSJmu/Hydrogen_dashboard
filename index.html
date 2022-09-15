@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dash.css" rel="stylesheet" type="text/css"/>
+    <script src="tab.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="banner">
+        <h1 id="header-text">RESULT REPORT</h1>
+    </div>
+    <hr/>
+    <div id="service" class="tabcontent">
+        <h4 class="service-title"><b>1. 시나리오별 평균 충전소 대기 시간</b></h4>
+        <br/>
+        <div class="row1">
+            <div class="col1">
+                <h4><b>(1) 추가 충전소 1곳 당 기기 2대</b></h4>
+            </div>
+            <div class="col2">
+                <h4><b>(2) 추가 충전소 1곳 당 기기 2대</b></h4>
+            </div>
+        </div>
+        <br/>
+        <div class="dash-graph">
+            <div class="js-plotly-plot">
+                <iframe src="./assets/fig1.html" frameborder="0">
+                </iframe>
+            </div>
+        </div>
+        <br/>
+        <div><hr/></div>
+        <br/>
+        <h4><b>2. 시나리오별 평균 이동시간</b></h4>
+        <br/>
+            <div id="service-row" class="row">
+                <div id="service-col1" class="dash-graph">
+                    <div class="js-plotly-plot">
+                        <iframe src="./assets/fig2.html" frameborder="0">
+                        </iframe>
+                    </div>
+                </div>
+                <br/>
+            </div>
+        <div><hr/></div>
+        <br/>
+        <h4><b>3. 시나라오 별 평균 이동거리</b></h4>
+        <br/>
+        <div id="service-row" class="row">
+            <div id="service-col1" class="dash-graph">
+                <div class="js-plotly-plot">
+                    <iframe src="./assets/fig3.html" frameborder="0">
+                    </iframe>
+                </div>
+            </div>
+            <br/>
+        </div>
+        <br/>
+    </div>
+</body>
+</html>
